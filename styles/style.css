@@ -64,6 +64,9 @@ body {
   background-color: #e02c6d;
   padding: 10px 24px;
 }
+.button:hover a {
+  background-color: orange;
+}
 /* css related to players and other parts */
 main {
   display: flex;
@@ -124,8 +127,10 @@ main {
   margin: auto 20px;
 }
 .img-highlights img {
-  width: 400px;
+  width: 450px;
   height: 350px;
+  border-radius: 20px;
+  margin-left: 50px;
 }
 .info-highlights h2 {
   font-weight: bold;
@@ -140,7 +145,7 @@ main {
 .info-highlights .button .fas {
   margin-left: 10px;
 }
-/* argentina footbat team section */
+/* argentina football team section */
 
 .container-head {
   text-align: center;
@@ -240,7 +245,7 @@ main {
   transform: translate(-50%);
 }
 .fot-logo {
-  width: 100%;
+  width: 90%;
 }
 .fot-logo img {
   width: 350px;
@@ -261,6 +266,7 @@ main {
   margin: 10px;
   color: black;
 }
+/* start responsivness by using media query */
 /* For Mobile */
 
 @media only screen and (max-width: 688px) {
@@ -280,7 +286,7 @@ main {
   }
   .header {
     height: 700px;
-    background-color: #2d25a0;
+    background-color: #140c83;
   }
 
   .half-width {
@@ -292,23 +298,23 @@ main {
     font-size: 35px;
   }
 
-  .nav-bar {
+  .navigation-bar {
     padding: 20px;
   }
 
-  .nav-link ul {
+  .navigation-link {
     width: 91%;
     margin-top: 20px;
     position: absolute;
     display: block;
-    background-color: #2d25a0;
+    background-color: #140c83;
     text-align: center;
     margin-bottom: 15px;
     transition: 0.8s;
     left: -600px;
   }
 
-  .nav-link ul li {
+  .navigation-link a {
     position: relative;
     display: block;
     text-align: center;
@@ -316,31 +322,22 @@ main {
     margin-bottom: 15px;
   }
 
-  .nav-btn .fas {
-    opacity: 1;
-    display: inline-block;
-  }
-
-  #taggle:checked ~ .nav-link ul {
-    left: 0;
-  }
-
   .players,
-  .highlight,
-  .best-team {
+  .highlights,
+  .team {
     position: relative;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 30px;
     margin: 0 auto;
   }
 
-  .social-row {
+  .row {
     flex-direction: column;
     box-shadow: 0px 0px 0px #fff;
     border-radius: 20px;
   }
 
-  .fotter-icon .fab {
+  .fot-icon .fab {
     width: 10px;
     height: 10px;
     font-size: 10px;
@@ -354,4 +351,4 @@ main {
   }
 }
 
-/* responsivness by using media query */
+/* End responsivness by using media query */
