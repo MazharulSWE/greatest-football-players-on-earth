@@ -1,0 +1,357 @@
+/* css common style  */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  position: relative;
+}
+.header {
+  width: 100%;
+  height: 677px;
+  background-color: #2d25a0;
+}
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 150px;
+}
+.navigation-link {
+  list-style: none;
+  padding: 25px;
+  display: inline-block;
+  position: relative;
+}
+.navigation-link a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.navigation-link a:hover {
+  color: lightgray;
+  background-color: orangered;
+  border-radius: 15px;
+}
+.header-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 100px;
+  margin: 0 165px;
+}
+.half-width img {
+  width: 550px;
+  height: 430px;
+}
+.half-width .button {
+  margin-top: 20px;
+}
+.half-width .button .fas {
+  margin-left: 10px;
+}
+.half-width h1 {
+  color: #fff;
+  font-size: 65px;
+}
+.button a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+}
+/* css related to players and other parts */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.container {
+  width: 870px;
+  position: relative;
+  margin: 50px auto;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+}
+
+.player {
+  position: relative;
+  margin: auto 20px;
+  box-shadow: 0px 5px 13px #0000003f;
+}
+
+.img-player {
+  width: 92%;
+}
+
+.player img {
+  width: 100%;
+  margin: 4% 4% auto 4%;
+  display: inline-block;
+}
+
+.details-player {
+  width: 92%;
+  margin: 2% 4% 10% 4%;
+}
+
+.details-player h2 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #18191f;
+  margin-bottom: 10px;
+}
+
+.details-player p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c6c;
+}
+/* Css style for highlight section  */
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  align-items: center;
+  margin: auto 20px;
+}
+.img-highlights img {
+  width: 400px;
+  height: 350px;
+}
+.info-highlights h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.info-highlights p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #6c6c6c;
+  margin-bottom: 25px;
+}
+.info-highlights .button .fas {
+  margin-left: 10px;
+}
+/* argentina footbat team section */
+
+.container-head {
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 10%;
+  font-size: 40px;
+  font-weight: bold;
+}
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.argentina-team {
+  position: relative;
+  margin: auto 20px;
+  box-shadow: 0px 5px 13px #0000003f;
+  border-radius: 25px;
+}
+.argentina-flag {
+  width: 92%;
+}
+.argentina-flag img {
+  width: 100%;
+  margin: 4% 4% auto 4%;
+  display: inline-block;
+  border-radius: 35px;
+}
+.argentina-details {
+  text-align: center;
+  width: 92%;
+  margin: 2% 4% 10% 4%;
+}
+
+.argentina-details p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #6c6c6c;
+}
+
+.flag-button {
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 5%;
+}
+.flag-button .fas {
+  margin-left: 10px;
+}
+/* Social media style */
+
+.social-container {
+  padding: 0;
+  height: 350px;
+  margin-top: 400px;
+}
+
+.row {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+  box-shadow: 2px 2px 25px pink;
+  border-radius: 30px;
+}
+.column h1 {
+  font-size: 40px;
+  transition: 0.5s;
+  cursor: progress;
+  display: inline-block;
+}
+.column h1:hover {
+  color: orangered;
+  transform: scale(1.5) translateY(-15px);
+}
+.column {
+  text-align: center;
+  width: 35%;
+  margin-top: 30px;
+}
+
+.column p {
+  color: orangered;
+  padding-bottom: 25px;
+  font-size: large;
+}
+
+/* footer part */
+
+.fot {
+  text-align: center;
+}
+.fot-head {
+  display: inline-block;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.fot-logo {
+  width: 100%;
+}
+.fot-logo img {
+  width: 350px;
+  height: 110px;
+}
+.fot-icon .fab {
+  width: 10px;
+  height: 10px;
+  font-size: 15px;
+  color: #414141;
+  background-color: #bdbdbd;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 50px;
+}
+.copyright {
+  font-size: 15px;
+  margin: 10px;
+  color: black;
+}
+/* For Mobile */
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+
+  .header-info {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 50px;
+    margin: 0px;
+  }
+
+  .half-width .header-info {
+    display: inline-block;
+    margin: 4% 4% auto 4%;
+  }
+  .header {
+    height: 700px;
+    background-color: #2d25a0;
+  }
+
+  .half-width {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .half-width h1 {
+    font-size: 35px;
+  }
+
+  .nav-bar {
+    padding: 20px;
+  }
+
+  .nav-link ul {
+    width: 91%;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+    background-color: #2d25a0;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: 0.8s;
+    left: -600px;
+  }
+
+  .nav-link ul li {
+    position: relative;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .nav-btn .fas {
+    opacity: 1;
+    display: inline-block;
+  }
+
+  #taggle:checked ~ .nav-link ul {
+    left: 0;
+  }
+
+  .players,
+  .highlight,
+  .best-team {
+    position: relative;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+    margin: 0 auto;
+  }
+
+  .social-row {
+    flex-direction: column;
+    box-shadow: 0px 0px 0px #fff;
+    border-radius: 20px;
+  }
+
+  .fotter-icon .fab {
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    margin: 0 5px 20px;
+    padding: 8px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
+
+/* responsivness by using media query */
